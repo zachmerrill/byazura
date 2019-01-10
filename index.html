@@ -22,13 +22,13 @@
         document.getElementById("playersContainer").appendChild(divs[n]);
         // create player
         players[n] = new YT.Player(divs[n].id, {
-            width: 600,
-            height: 400,
+            width: 200,
+            height: 200,
             videoId: 'oJTpL__5rJ4',
             playerVars: {
-                //controls: 0,
-                //disablekb: 1,
-                //loop: 1
+                controls: 0,
+                color: "white",
+                disablekb: 1
             },
             events: {
                 onReady: onPlayerReady // once loaded, play video
